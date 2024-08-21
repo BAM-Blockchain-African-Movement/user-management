@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "user-management-backend": {
+      "main": "src/user-management-backend/main.mo",
+      "type": "motoko"
+    },
+    "user-management-frontend": {
+      "dependencies": [
+        "user-management-backend"
+      ],
+      "source": [
+        "src/user-management-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "user-management-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
