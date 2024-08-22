@@ -4,10 +4,6 @@ import Nat32 "mo:base/Nat32";
 
 actor Inventory {
 
-  /**
-   * Types
-   */
-
   // The type of an item identifier.
   public type ItemId = Nat32;
 
